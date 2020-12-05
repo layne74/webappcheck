@@ -15,7 +15,7 @@ body {
 }
 
 #mainRow {
-  height: calc(100vh);
+  height: calc(100vh - 4em);
 }
 
 /* ---------------- NAVBAR ---------------- */
@@ -233,7 +233,7 @@ body.modal-open > :not(.modal) {
   margin-bottom: 0px;
   overflow-x: hidden; 
   overflow-y: auto;
-  height: calc(100vh - 15em);
+  height: calc(50vh);
   scrollbar-width: none;
   background: linear-gradient(360deg, rgba(59,59,59,0) 82%, rgba(0,0,0,0.018627519367121814) 100%);
 }
