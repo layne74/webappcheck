@@ -1,4 +1,3 @@
-
 /* --------------- GENERAL BODY --------------- */
 
 html, body {
@@ -15,7 +14,7 @@ body {
 }
 
 #mainRow {
-  height: calc(100vh - 4em); /* ------calc(100vh - 4em)-------------------------------------------------------------------------- */
+  height: calc(100vh - 4em);
 }
 
 /* ---------------- NAVBAR ---------------- */
@@ -140,7 +139,7 @@ body.modal-open > :not(.modal) {
 }
 
 #contactBod {
-  height: calc(100vh - 12em); /* ------calc(100vh - 12em)-------------------------------------------------------------------------- */
+  height: calc(100vh - 12em);
   overflow: scroll;
   scrollbar-width: none;
   background: linear-gradient(360deg, rgba(59,59,59,0) 82%, rgba(0, 0, 0, 0.041) 100%);
@@ -233,7 +232,7 @@ body.modal-open > :not(.modal) {
   margin-bottom: 0px;
   overflow-x: hidden; 
   overflow-y: auto;
-  height: calc(100vh - 15em); /* ------calc(100vh - 15em)-------------------------------------------------------------------------- */
+  height: calc(100vh - 15em);
   scrollbar-width: none;
   background: linear-gradient(360deg, rgba(59,59,59,0) 82%, rgba(0,0,0,0.018627519367121814) 100%);
 }
@@ -261,4 +260,4 @@ body.modal-open > :not(.modal) {
   #show-friends-btn {
     display: none;
   }
-}
+} 
