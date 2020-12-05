@@ -1,0 +1,264 @@
+
+/* --------------- GENERAL BODY --------------- */
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body ::-webkit-scrollbar { width: 0 !important }  
+body { overflow: -moz-scrollbars-none; }
+body { -ms-overflow-style: none; }
+
+body {
+  background-color: #36393d;
+}
+
+#mainRow {
+  height: calc(100vh - 4em);
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar-brand > img{
+  width: 150px;
+  height: 15%
+}
+#searchBar {
+  height: 28px;
+  width: 500px;
+  padding-right: 0px;
+  background-color: #ffffffa4;
+  transition: 150ms;
+}
+
+#searchBar:focus {
+  background-color: #ffffffec;
+  outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  #searchBar {
+    width: 250px;
+  }
+}
+
+/* --------------- MODAL --------------- */
+
+body.modal-open > :not(.modal) {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+.modal-input {
+  border-bottom: 1px #343a40 solid;
+}
+
+.modal-input input{
+  background-color: white;
+  transition: all .20s ease;
+}
+.modal-input input:focus{
+  background-color: rgba(228, 245, 232, 0.438);
+}
+
+.modal-custom {
+  width: 350px;
+}
+.modal-btn-sign-in {
+  width: 200px;
+  height: 30px;
+  color: #1eb386;
+  background-color: white;
+  border: 1px #1eb386 solid;
+  transition: all .15s ease;
+}
+
+.modal-btn-sign-in:hover {
+  color: white;
+  background-color: #1eb386;
+}
+
+.modal-btn-sign-up {
+  width: 200px;
+  height: 30px;
+  background-color: #1eb386;
+  color: white;
+  border: none;
+  transition: all .15s ease;
+}
+
+.modal-btn-sign-up:hover {
+  background-color: #23c292;
+}
+
+.input-custom:focus {
+  border: none;
+  box-shadow: none;
+  border-color: white;
+  background-color: #eefffa;
+}
+.border-none {
+  border: none;
+  border-radius: 0;
+}
+.scroll {
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+/* --------------- FRIENDS --------------- */
+
+.bg-teal {
+    background-color: #1eb386;
+}
+.hr-border {
+    border-top: #343a40 1.5px solid;
+    margin: 0;
+}
+#user-img {
+    width: 45px;
+    height: 45px;
+}
+
+#friends-container,
+#msg-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+  #msg-container {
+    margin-left: 1em;
+  }
+  #searchBar {
+    width: 200px;
+  }
+}
+
+#contactBod {
+  height: calc(100vh - 12em);
+  overflow: scroll;
+  scrollbar-width: none;
+  background: linear-gradient(360deg, rgba(59,59,59,0) 82%, rgba(0, 0, 0, 0.041) 100%);
+  /* Scroll fadeout bottom*/
+  -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 97%, transparent 100%);
+}
+
+#friends-container {
+  margin-left: 1em;
+}
+
+#contactHead {
+  margin-top: 15px;
+  padding-left: 0px;
+}
+
+.friendRow {
+  margin-top: 0px;
+  transition: 85ms ease-in-out;
+}
+
+.friendRow:hover {
+  background-color: #37c59a;
+}
+
+.friendRow > a {
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.friendRow > img {
+  margin-left: 10px;
+  width: 50%;
+  height: 50%;
+}
+
+.prevMessage{
+  white-space: nowrap; 
+  overflow:hidden; 
+  text-overflow: ellipsis;
+}
+
+/* --------------- MESSAGES PANEL --------------- */
+
+.message-friend,
+.message-user {
+  width: fit-content;
+  width: -moz-fit-content;
+  max-width: 65%;
+  margin-bottom: 10px;
+}
+
+.message-friend {
+  background-color: #607d8b;
+  border-radius: 10px 10px 10px 0;
+}
+.message-user p:nth-child(2) {
+  text-align: right;
+}
+.message-user {
+  background-image: linear-gradient(to bottom right, #46967e, #247d62);
+  border-radius: 10px 10px 0 10px;
+}
+
+#message-input {
+  position: relative;
+  bottom: 15px;
+  border-bottom: 2px #1eb386 solid;
+}
+
+#msg-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#message-send-btn {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+#message-send-btn:hover {
+  background-color: #1a9973;
+}
+
+#message-panel {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  height: calc(100vh - 15em);
+  scrollbar-width: none;
+  background: linear-gradient(360deg, rgba(59,59,59,0) 82%, rgba(0,0,0,0.018627519367121814) 100%);
+}
+
+#message-panel {
+  scroll-behavior: smooth;
+}
+
+#msg-container {
+  background-image: linear-gradient(to top, #8b8b8b2c, #f1f1f1);
+  /*display: none;*/
+}
+
+#show-friends-btn {
+  font-size: 30px;
+  color: #1eb386;
+  border: none !important;
+  outline: none;
+  background-color: #f1f1f100;  
+  padding-left: 5px;
+  padding-right: 4px;
+}
+
+@media only screen and (min-width: 767px) {
+  #show-friends-btn {
+    display: none;
+  }
+}
