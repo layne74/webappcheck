@@ -12,7 +12,7 @@ The app must have the following functionality:
 ## Usage
 you can simply go to this link to view and use the web app
 
-https://simphiwe-nkabinde.github.io/Social-Media-App-Project/
+https://layne74.github.io/webappcheck/
 
 ## Credits
 Simphiwe Nkabinde https://github.com/simphiwe-nkabinde  
